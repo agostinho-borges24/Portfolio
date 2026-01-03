@@ -1,4 +1,4 @@
-# `<AGOSTINHO BORGES/>`{=html}
+# `<AGOSTINHO BORGES/>`
 
 Portfólio pessoal de **Agostinho Borges**, desenvolvedor frontend focado
 em criar experiências digitais modernas, funcionais e visualmente
@@ -80,6 +80,7 @@ O portfólio apresenta:
 /
 ├── index.html
 ├── style.css
+├── scripts.js
 ├── img/
 │   └── imagens do projeto
 ├── projeto1.png
