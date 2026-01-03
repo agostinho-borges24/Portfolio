@@ -1,0 +1,459 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #4d7cfe;
+  border-radius: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  cursor: none;
+}
+
+body {
+  background-color: #0a0a0a;
+  color: #fff;
+}
+
+.secao {
+  padding: 100px 50px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+li a:hover {
+  color: #4d7cfe;
+  border-bottom: 0.1rem solid #4d7cfe;
+  padding-bottom: 0.3rem;
+  transition: 0.2s linear;
+}
+
+.principal {
+  display: flex;
+  align-items: center;
+  margin-left: 30px;
+  min-height: 85vh;
+}
+
+.principal h1 {
+  font-size: 80px;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  letter-spacing: -4px;
+}
+
+.principal h1 span {
+  color: #4d7cfe;
+}
+
+.principal p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  max-width: 500px;
+  color: #bbb;
+}
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #4d7cfe;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.titulo-secao {
+  font-size: 42px;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.titulo-secao::after {
+  content: "";
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  width: 100px;
+  height: 4px;
+  background-color: #4d7cfe;
+}
+
+.grade-projetos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.card-projeto {
+  background-color: #161616;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-projeto {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.info-projeto {
+  padding: 20px;
+}
+
+.info-projeto h3 {
+  margin-bottom: 10px;
+}
+
+.info-projeto p {
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.info-projeto a {
+  color: #4d7cfe;
+}
+
+.sobre {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+  max-width: 1200px;
+}
+
+.img-sobre {
+  height: 400px;
+  background-color: #161616;
+  border-radius: 16px;
+}
+
+.conteudo-sobre h2 {
+  margin-bottom: 30px;
+}
+
+.conteudo-sobre p {
+  color: #bbb;
+  margin-bottom: 20px;
+}
+
+.habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.tag-habilidades {
+  background-color: rgba(77, 124, 254, 0.2);
+  color: #4d7cfe;
+  padding: 8px 15px;
+  border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.botoes-contato {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.botao-contato {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: 500;
+  min-width: 160px;
+}
+
+.whatsapp {
+  background-color: #25d366;
+}
+
+.linkedin {
+  background-color: #0077b5;
+}
+
+.github {
+  background-color: #333;
+}
+
+.email {
+  background-color: #ea4335;
+}
+
+footer {
+  padding: 20px 5%;
+  text-align: center;
+  border-top: 1px solid #222;
+}
+
+.efeito-cursor {
+  transition: transform 0.4s ease-in-out;
+}
+
+.efeito-cursor:hover {
+  transform: translateY(-10px);
+}
+
+.cursor {
+  pointer-events: none;
+  position: fixed;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: rgba(77, 124, 254);
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  font-family: "Space Grotesk", sans-serif;
+  font-weight: 700;
+}
+
+/* =========================
+   RESPONSIVIDADE
+========================= */
+
+/* Tablets e telas médias */
+@media (max-width: 1024px) {
+  .secao {
+    padding: 80px 40px;
+  }
+
+  .principal h1 {
+    font-size: 60px;
+    letter-spacing: -2px;
+  }
+
+  .sobre {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .img-sobre {
+    margin: 0 auto;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .habilidades {
+    justify-content: center;
+  }
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+  header {
+    justify-content: center;
+  }
+
+  ul {
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .principal {
+    margin-left: 0;
+    padding: 0 20px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .principal h1 {
+    font-size: 42px;
+    letter-spacing: -1px;
+  }
+
+  .principal p {
+    font-size: 18px;
+    margin: 0 auto 30px;
+  }
+
+  .titulo-secao {
+    font-size: 32px;
+  }
+
+  .titulo-secao::after {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .grade-projetos {
+    gap: 20px;
+  }
+
+  .botoes-contato {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .botao-contato {
+    justify-content: center;
+  }
+}
+
+/* Smartphones pequenos */
+@media (max-width: 480px) {
+  .secao {
+    padding: 60px 20px;
+  }
+
+  .principal h1 {
+    font-size: 34px;
+  }
+
+  .principal p {
+    font-size: 16px;
+  }
+
+  .btn {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+
+  footer {
+    font-size: 14px;
+  }
+
+  /* Cursor customizado some no mobile (boa prática) */
+  .cursor {
+    display: none;
+  }
+}
+
+/* =========================
+   MENU HAMBURGER
+========================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  position: relative;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: bold;
+  color: #4d7cfe;
+}
+
+/* Menu padrão (desktop) */
+.menu {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.hamburger span {
+  width: 28px;
+  height: 3px;
+  background-color: #fff;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #0a0a0a;
+    border-top: 1px solid #222;
+    display: none;
+  }
+
+  .nav.active {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 20px;
+    padding: 30px 0;
+    text-align: center;
+  }
+
+  .menu li a {
+    font-size: 20px;
+  }
+}
+
+/* Animação do hamburger */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(6px, 6px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+/* =========================
+   CURSOR INTERATIVO
+========================= */
+
+.cursor {
+  transition: background-color 0.25s ease, transform 0.25s ease;
+}
+
+/* Estado ativo (hover em links) */
+.cursor.active {
+  background-color: rgba(203, 211, 242, 0.9);
+  transform: translate(-50%, -50%) scale(1.2);
+}
