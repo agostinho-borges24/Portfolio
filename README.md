@@ -10,7 +10,7 @@ fundamentos.
 
 ------------------------------------------------------------------------
 
-## ✨ Visão Geral
+## Visão Geral
 
 O portfólio apresenta:
 
@@ -24,7 +24,7 @@ O portfólio apresenta:
 
 ------------------------------------------------------------------------
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 -   **HTML5** -- Estrutura semântica
 -   **CSS3** -- Layout, animações e responsividade
@@ -33,7 +33,7 @@ O portfólio apresenta:
 
 ------------------------------------------------------------------------
 
-## 📱 Funcionalidades
+## Funcionalidades
 
 -   ✅ Menu hamburger animado
 -   ✅ Menu fecha ao:
@@ -46,7 +46,7 @@ O portfólio apresenta:
 
 ------------------------------------------------------------------------
 
-## 🎨 Design
+## Design
 
 -   Tema escuro (dark mode)
 -   Destaques em azul
@@ -56,7 +56,7 @@ O portfólio apresenta:
 
 ------------------------------------------------------------------------
 
-## 🚀 Como usar o projeto
+## Como usar o projeto
 
 1.  Clone o repositório:
 
@@ -74,7 +74,7 @@ O portfólio apresenta:
 
 ------------------------------------------------------------------------
 
-## 📌 Estrutura de Pastas
+## Estrutura de Pastas
 
 ``` text
 /
@@ -90,7 +90,7 @@ O portfólio apresenta:
 
 ------------------------------------------------------------------------
 
-## 🌍 Contato
+## Contato
 
 -   **WhatsApp:** +244 932 138 572\
 -   **Email:** agostinholborges24@gmail.com\
@@ -99,7 +99,7 @@ O portfólio apresenta:
 
 ------------------------------------------------------------------------
 
-## 📄 Licença
+## Licença
 
 Este projeto é de uso pessoal.\
 Sinta-se à vontade para se inspirar, mas não copiar integralmente sem
